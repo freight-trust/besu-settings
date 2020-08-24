@@ -13,6 +13,8 @@ wget https://gist.githubusercontent.com/sambacha/4e43617ffbb7a5b6639e21a31928c63
 
 export _JAVA_OPTIONS="$_JAVA_OPTIONS -javaagent:jHiccup-2.1.0/jHiccup.jar=\"-l hiccup.log -d 0 -i 1000\""
 # tail -f hiccup.log | jhiccup_exporter
-bin/besu --genesis-file=genesis.json
+
+bin/besu --genesis
 
 --pid-path=
+--genesis-file=genesis.json
